@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smetai AI</title>
+    <style>
+        body {
+            background-color: #1e1e1e; /* VS Code Dark Theme Background */
+            color: #d4d4d4; /* Default text color */
+            font-family: 'Consolas', 'Menlo', 'Courier New', monospace;
+            font-size: 16px;
+            line-height: 1.5;
+            display: flex;
+            justify-content: flex-start; /* Align content to the left */
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            width: 100%;
+            max-width: 90ch;
+        }
+        /* Syntax Highlighting Styles */
+        .heading {
+            color: #569cd6; /* Blue for headings */
+            font-weight: bold;
+        }
+        .logo {
+            color: #4ec9b0; /* Teal/Cyan for the logo */
+        }
+        .keyword {
+            color: #c586c0; /* Purple/Magenta for keywords like AI, PDF */
+        }
+        .product {
+            color: #4ec9b0; /* Teal/Cyan for product names like Gemini, Claude */
+        }
+        .bullet {
+            color: #9cdcfe; /* Light blue for bullets/numbers */
+        }
+        .contact {
+            color: #ce9178; /* Orange for strings/contact info */
+        }
+    </style>
+</head>
+<body>
+<pre><span class="logo">
+  ███████╗███╗   ███╗███████╗████████╗   ██╗   █████╗  ██╗
+  ██╔════╝████╗ ████║██╔════╝╚══██╔══╝   ██║  ██╔══██╗ ██║
+  ███████╗██╔████╔██║█████╗     ██║      ██║  ███████║ ██║
+  ╚════██║██║╚██╔╝██║██╔══╝     ██║      ╚═╝  ██╔══██║ ╚═╝
+  ███████║██║ ╚═╝ ██║███████╗   ██║      ██╗  ██║  ██║ ██╗
+  ╚══════╝╚═╝     ╚═╝╚══════╝   ╚═╝      ╚═╝  ╚═╝  ╚═╝ ╚═╝
+</span>
+<span class="heading">Smetai — AI Platform for Commercial Proposals from PDF Specifications</span>
+
+<span class="heading">Project Goal</span>
+
+To automate the creation of commercial proposals (CPs) based on engineering <span class="keyword">PDF</span>s, 
+specifications, and technical drawings using generative <span class="keyword">AI</span> models like 
+<span class="product">Claude Code</span> and <span class="product">Gemini Vision/Pro/CLI</span>.
+
+Our main focus is industrial and construction companies that work with complex 
+technical documentation.
+
+<span class="heading">Smetai 5.0 Pipeline (MVP)</span>
+
+<span class="bullet">1. Input</span>
+   - Upload <span class="keyword">PDF</span> files (drawings, specifications)
+   - Interface via <span class="product">Telegram</span> bot or web panel
+
+<span class="bullet">2. PDF Processing</span>
+   - Convert <span class="keyword">PDF</span> to high-resolution <span class="keyword">PNG</span>
+   - <span class="product">Gemini Vision</span> identifies tables, drawings, and text blocks
+
+<span class="bullet">3. OCR + Correction</span>
+   - <span class="product">Azure OCR</span> (or <span class="product">GCP Vision AI</span>) extracts <span class="keyword">HTML</span>/text from images
+   - <span class="product">Claude</span> or <span class="product">Gemini Pro</span> structures the data and applies a prompt-based 
+     correction layer
+
+<span class="bullet">4. Data Normalization & Enrichment</span>
+   - Clean up noisy or incomplete data
+   - Match against reference catalogs
+   - Evaluate chunk quality and re-prompt if needed
+
+<span class="bullet">5. Price Matching</span>
+   - Manual or automatic extraction from supplier sources
+   - <span class="product">Gemini Vision</span> reads from screenshots or online price sheets
+
+<span class="bullet">6. Proposal Generation</span>
+   - <span class="product">Claude Code/Pro</span> generates the final CP with structure, positions, and pricing
+   - Outputs <span class="keyword">PDF</span> or in-chat message for quick delivery
+
+<span class="heading">Scaling Potential</span>
+
+<span class="bullet">Technically:</span>
+   - Modular <span class="keyword">AI</span> agents (<span class="product">FastAPI</span> microservices)
+   - Accessible via <span class="keyword">API</span>, bots, and web dashboards
+   - Supports streaming, batch, and parallel execution
+   - Ready for cloud deployment (<span class="product">Cloud Run</span>, <span class="product">GKE</span>)
+
+<span class="bullet">By Industry:</span>
+   - Compatible with various sectors: construction, manufacturing, food processing, etc.
+   - Custom templates by country and tender requirements
+   - Supplier optimization and logistics module in roadmap
+
+<span class="heading">Contact</span>
+
+Email: <span class="contact">i@n88n.site</span>
+Telegram: <span class="contact">@aianback</span>
+</pre>
+</body>
+</html>
